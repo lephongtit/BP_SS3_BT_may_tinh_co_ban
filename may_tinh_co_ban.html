@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Máy tính cơ bản</title>
+    <style>
+        .khuon{
+
+            width: 280px;
+            height: 330px;
+        }
+        .hiethi{
+            width: 260px;
+            height: 30px;
+            text-align: right;
+
+        }
+        .nut{
+            width: 50px;
+            height: 50px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+<fieldset class="khuon">
+    <fieldset class="hiethi"> <p id="nhap"></p></fieldset>
+    <br/>
+    <button id="1" type="button" class="nut"onclick="click1()">1</button>
+    <button id="2" type="button" class="nut"onclick="click2()">2</button>
+    <button id="3" type="button" class="nut"onclick="click3()">3</button>
+    <button id="+" type="button" class="nut"onclick="clickcong()">+</button>
+
+    <button id="4" type="button" class="nut"onclick="click4()">4</button>
+    <button id="5" type="button" class="nut"onclick="click5()">5</button>
+    <button id="6" type="button" class="nut"onclick="click6()">6</button>
+    <button id="-" type="button" class="nut"onclick="clicktru()">-</button>
+
+    <button id="7" type="button" class="nut"onclick="click7()">7</button>
+    <button id="8" type="button" class="nut"onclick="click8()">8</button>
+    <button id="9" type="button" class="nut"onclick="click9()">9</button>
+    <button id="x" type="button" class="nut"onclick="clicknhan()">x</button>
+
+    <button id="C" type="button" class="nut"onclick="clickC()">C</button>
+    <button id="0" type="button" class="nut"onclick="click0()">0</button>
+    <button id="=" type="button" class="nut"onclick="clickbang()">=</button>
+    <button id="/" type="button" class="nut"onclick="clickchia()">/</button>
+</fieldset>
+<script>
+    let s="";
+    function click1() {
+        s+="1";
+        if(s.length<30) document.getElementById("nhap").innerText=s;
+        else document.getElementById("nhap").innerText=s.slice(s.length-30,s.length);
+    }
+    function click2() {
+        s+="2";
+        if(s.length<30) document.getElementById("nhap").innerText=s;
+        else document.getElementById("nhap").innerText=s.slice(s.length-30,s.length);
+    }
+    function click3() {
+        s+="3";
+        if(s.length<30) document.getElementById("nhap").innerText=s;
+        else document.getElementById("nhap").innerText=s.slice(s.length-30,s.length);
+    }
+    function click4() {
+        s+="4";
+        if(s.length<30) document.getElementById("nhap").innerText=s;
+        else document.getElementById("nhap").innerText=s.slice(s.length-30,s.length);
+    }
+    function click5() {
+        s+="5";
+        if(s.length<30) document.getElementById("nhap").innerText=s;
+        else document.getElementById("nhap").innerText=s.slice(s.length-30,s.length);
+    }
+    function click6() {
+        s+="6";
+        if(s.length<30) document.getElementById("nhap").innerText=s;
+        else document.getElementById("nhap").innerText=s.slice(s.length-30,s.length);
+    }
+    function click7() {
+        s+="7";
+        if(s.length<30) document.getElementById("nhap").innerText=s;
+        else document.getElementById("nhap").innerText=s.slice(s.length-30,s.length);
+    }
+    function click8() {
+        s+="1";
+        if(s.length<30) document.getElementById("nhap").innerText=s;
+        else document.getElementById("nhap").innerText=s.slice(s.length-30,s.length);
+    }
+    function click9() {
+        s+="9";
+        if(s.length<30) document.getElementById("nhap").innerText=s;
+        else document.getElementById("nhap").innerText=s.slice(s.length-30,s.length);
+    }
+    function click0() {
+        s+="0";
+        if(s.length<30) document.getElementById("nhap").innerText=s;
+        else document.getElementById("nhap").innerText=s.slice(s.length-30,s.length);
+    }
+    function clickcong() {
+        s+="+";
+        if(s.length<30) document.getElementById("nhap").innerText=s;
+        else document.getElementById("nhap").innerText=s.slice(s.length-30,s.length);
+    }
+    function clicktru() {
+        s+="-";
+        if(s.length<30) document.getElementById("nhap").innerText=s;
+        else document.getElementById("nhap").innerText=s.slice(s.length-30,s.length);
+    }
+    function clicknhan() {
+        s+="*";
+        if(s.length<30) document.getElementById("nhap").innerText=s;
+        else document.getElementById("nhap").innerText=s.slice(s.length-30,s.length);
+    }
+    function clickchia() {
+        s+="/";
+        if(s.length<30) document.getElementById("nhap").innerText=s;
+        else document.getElementById("nhap").innerText=s.slice(s.length-30,s.length);
+    }
+    function clickC() {
+        s="";
+        if(s.length<30) document.getElementById("nhap").innerText=s;
+        else document.getElementById("nhap").innerText=s.slice(s.length-30,s.length);
+
+    }
+    function clickbang() {
+        let a=eval(s);
+        s+="="+ a;
+        if(s.length<30) document.getElementById("nhap").innerText=s;
+        else document.getElementById("nhap").innerText=s.slice(s.length-30,s.length);
+        s=a;
+    }
+
+</script>
+
+</body>
+</html>
